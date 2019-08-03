@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import { Route, NavLink } from "react-router-dom";
 
 import LeftColumn from "./components/LeftColumn/LeftColumn"
 

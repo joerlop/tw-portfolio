@@ -1,27 +1,62 @@
 import React from "react";
 import "./LeftColumn.scss";
+import { NavLink } from "react-router-dom";
 
-import githubImage from "../../images/github.svg";
-import twitterImage from "../../images/twitter.svg";
-import emailImage from "../../images/email.svg";
+import { ReactComponent as CVLogo } from "../../images/cv.svg";
+import { ReactComponent as PortfolioLogo } from "../../images/portfolio.svg";
 
 class LeftColumn extends React.Component {
   constructor() {
     super();
+    this.state = {
+      github: false,
+      twitter: false,
+      email: false
+    };
   }
 
   render() {
     return (
       <div className="navigation-container">
-        <h2>JE</h2>
+        <h1>JE</h1>
+        <NavLink
+          exact
+          to="/"
+          className="nav-item"
+          activeStyle={{ color: "#1a91da", fill: "#1a91da" }}
+        >
+          <CVLogo className="logo" alt="cv icon" />
+          <h2>CV</h2>
+        </NavLink>
+        <NavLink
+          to="/portfolio"
+          className="nav-item"
+          activeStyle={{ color: "#1a91da", fill: "#1a91da" }}
+        >
+          <PortfolioLogo className="logo" alt="portfolio icon" />
+          <h2>Portfolio</h2>
+        </NavLink>
+
+        {/*
         <a target="_blank" href="https://github.com/joerlop">
           <div className="nav-item">
-            <img src={githubImage} alt="github icon" />
+            <GithubLogo className="logo" alt="github icon" />
             <h2>Github</h2>
           </div>
         </a>
-        <div className="nav-item" />
-        <div className="nav-item" />
+        <a target="_blank" href="https://twitter.com/JonathanErlichL">
+          <div className="nav-item">
+            <TwitterLogo className="logo" alt="twitter icon" />
+            <h2>Real Twitter</h2>
+          </div>
+        </a>
+        <a target="_blank" href="mailto:jj.erlich155@gmail.com">
+          <div className="nav-item">
+            <EmailLogo className="logo" alt="email icon" />
+            <h2>Contact</h2>
+          </div>
+        </a>
+        */}
       </div>
     );
   }
