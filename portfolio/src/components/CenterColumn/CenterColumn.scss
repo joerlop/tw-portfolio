@@ -1,0 +1,123 @@
+$twitterGray: #728390;
+$twitterBlue: #1a91da;
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  
+  .title {
+    height: 55px;
+    font-size: 20px;
+    font-weight: 900;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    h1 {
+      margin-left: 20px;
+    }
+  }
+
+  .images {
+    height: 200px;
+    width: 100%;
+    background-image: url("../../images/bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    .profile-image {
+      margin-left: 10px;
+      position: relative;
+      top: 80px;
+
+      img {
+        height: 140px;
+        border-radius: 50%;
+        border: 4px solid white;
+      }
+    }
+  } //images
+
+  .profile {
+    height: 230px;
+    padding: 0 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .name {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 15px;
+
+      h1 {
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: 5px;
+      }
+
+      p {
+        color: $twitterGray;
+      }
+    } //name
+
+    .bio {
+      text-align: start;
+      margin-bottom: 15px;
+
+      p {
+        line-height: 1.2;
+
+        a {
+          text-decoration: none;
+          color: $twitterBlue;
+        }
+      }
+    } //bio
+
+    .date {
+      display: flex;
+      margin-bottom: 15px;
+
+      .calendar {
+        height: 18px;
+        margin-right: 10px;
+
+        g {
+          fill: $twitterGray;
+        }
+      }
+
+      p {
+        color: $twitterGray;
+      }
+    } //date
+
+    .stats {
+      display: flex;
+      margin-bottom: 15px;
+
+      p {
+        font-weight: bold;
+        margin-right: 25px;
+
+        span {
+          color: $twitterGray;
+          font-weight: normal;
+        }
+      }
+    }
+  } //profile
+
+
+}

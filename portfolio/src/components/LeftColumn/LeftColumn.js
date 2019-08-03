@@ -2,23 +2,22 @@ import React from "react";
 import "./LeftColumn.scss";
 import { NavLink } from "react-router-dom";
 
+import { ReactComponent as BirdLogo } from "../../images/bird-logo.svg";
 import { ReactComponent as CVLogo } from "../../images/cv.svg";
 import { ReactComponent as PortfolioLogo } from "../../images/portfolio.svg";
 
 class LeftColumn extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      github: false,
-      twitter: false,
-      email: false
-    };
-  }
 
   render() {
     return (
       <div className="navigation-container">
-        <h1>JE</h1>
+        <NavLink
+          exact
+          to="/"
+          className="nav-logo"
+        >
+          <BirdLogo className="logo bird" alt="bird icon" />
+        </NavLink>
         <NavLink
           exact
           to="/"
