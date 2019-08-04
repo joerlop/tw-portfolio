@@ -2,6 +2,8 @@ $twitterGray: #728390;
 $twitterBlue: #1a91da;
 $twitterDarkGray: #657886;
 $twitterLightBlue: #e8f5fe;
+$twitterLightRed: #F3E3EB;
+$twitterRed: #E33C6F;
 
 .profile-container {
   display: flex;
@@ -166,8 +168,13 @@ $twitterLightBlue: #e8f5fe;
     flex-direction: column;
 
     .tweet {
+      padding: 20px 10px 10px 10px;
+      border-bottom: 1px solid lightgray;
+    }
+
+    .tweet-upper {
       display: flex;
-      padding: 20px 10px;
+      margin-bottom: 5px;
 
       .profile-picture {
         margin-right: 10px;
@@ -198,24 +205,63 @@ $twitterLightBlue: #e8f5fe;
 
         .tweet-message {
           text-align: start;
-          margin-bottom: 15px;
-        }
-
-        .tweet-social {
-          display: flex;
-          align-items: center;
-
-          .heart-icon {
-            height: 20px;
-            margin-right: 12px;
-            fill: $twitterGray;
-          }
-
-          p {
-            color: $twitterGray;
-          }
         }
       }
     } //tweet
+
+    .tweet-social {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 50px;
+
+      .like {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        width: auto;
+
+        .icon-container {
+          padding: 10px;
+          margin-right: 2px;
+  
+          .heart-icon {
+            height: 20px;
+            fill: $twitterGray;
+          }
+          
+          .heart-icon-filled {
+            height: 20px;
+            fill: $twitterRed;
+          }
+        }
+  
+        .liked-false {
+          color: $twitterGray;
+        }
+
+        .liked-true {
+          color: $twitterRed;
+        }
+  
+        &:hover {
+          .icon-container {
+            background: $twitterLightRed;
+            border-radius: 50px;
+  
+            .heart-icon {
+              fill: $twitterRed;
+            }
+
+            .heart-icon-filled {
+              fill: $twitterRed;
+            }
+          }
+  
+          p {
+            color: $twitterRed;
+          }
+        }
+      }
+    }
   } //tweets
 } //tweets-container
