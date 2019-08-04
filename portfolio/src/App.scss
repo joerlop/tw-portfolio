@@ -25,5 +25,10 @@
 
     .right-column-container {
       grid-area: right-column;
+
+      display: flex;
+      flex-direction: column;
+
+      margin-left: 20px;
     }
 }

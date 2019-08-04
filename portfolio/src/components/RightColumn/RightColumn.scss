@@ -1,0 +1,60 @@
+$othersBg: #f5f8fa;
+$othersDarkBg: #edf2f5;
+$othersLightGray: #e6ecf0;
+$twitterGray: #728390;
+
+.youmightlike {
+  margin-top: 5px;
+  border-radius: 20px;
+  background: $othersBg;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+    h2 {
+      span {
+        color: $twitterGray;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .youmight-item {
+    padding: 15px 10px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $othersLightGray;
+
+    h1 {
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .youmight-icon {
+      width: 45px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    p {
+      font-weight: bold;
+    }
+  }
+
+  .item {
+    cursor: pointer;
+
+    &:hover {
+      background: $othersDarkBg;
+    }
+  }
+
+  .last {
+    border-bottom: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+} //youmightlike
