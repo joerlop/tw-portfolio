@@ -1,12 +1,14 @@
 $twitterGray: #728390;
 $twitterBlue: #1a91da;
+$twitterDarkGray: #657886;
+$twitterLightBlue: #e8f5fe;
 
 .profile-container {
   display: flex;
   flex-direction: column;
   border-left: 1px solid lightgray;
   border-right: 1px solid lightgray;
-  
+
   .title {
     height: 55px;
     font-size: 20px;
@@ -46,9 +48,9 @@ $twitterBlue: #1a91da;
   } //images
 
   .profile {
-    height: 230px;
     padding: 0 10px;
-    
+    margin-top: 75px;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -118,6 +120,102 @@ $twitterBlue: #1a91da;
       }
     }
   } //profile
+} //profile-container
 
+.tweets-container {
+  height: auto;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
 
-}
+  .header {
+    height: 55px;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+
+    .cv {
+      width: 50%;
+      padding-bottom: 3px;
+    }
+
+    .portfolio {
+      width: 50%;
+      padding-bottom: 3px;
+    }
+
+    .header-link {
+      text-decoration: none;
+      color: $twitterDarkGray;
+      font-weight: bold;
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background: $twitterLightBlue;
+        color: $twitterBlue;
+        border-bottom: 2px solid $twitterLightBlue;
+      }
+    }
+  }
+
+  .tweets {
+    display: flex;
+    flex-direction: column;
+
+    .tweet {
+      display: flex;
+      padding: 20px 10px;
+
+      .profile-picture {
+        margin-right: 10px;
+
+        img {
+          width: 50px;
+          border-radius: 50%;
+        }
+      }
+
+      .tweet-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .tweet-header {
+          margin-bottom: 10px;
+
+          p {
+            font-weight: bold;
+
+            span {
+              color: $twitterGray;
+              font-weight: normal;
+            }
+          }
+        }
+
+        .tweet-message {
+          text-align: start;
+          margin-bottom: 15px;
+        }
+
+        .tweet-social {
+          display: flex;
+          align-items: center;
+
+          .heart-icon {
+            height: 20px;
+            margin-right: 12px;
+            fill: $twitterGray;
+          }
+
+          p {
+            color: $twitterGray;
+          }
+        }
+      }
+    } //tweet
+  } //tweets
+} //tweets-container

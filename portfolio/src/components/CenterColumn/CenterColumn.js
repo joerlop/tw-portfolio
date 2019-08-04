@@ -1,9 +1,12 @@
 import React from "react";
 import "./CenterColumn.scss";
-import { NavLink } from "react-router-dom";
+import { Route, NavLink } from "react-router-dom";
 
 import profileImage from "../../images/jonathan.jpg";
 import { ReactComponent as CalendarIcon } from "../../images/calendar.svg";
+
+import PortfolioTweets from "./PortfolioTweets";
+import CVTweets from "./CVTweets";
 
 class CenterColumn extends React.Component {
   render() {
@@ -30,13 +33,15 @@ class CenterColumn extends React.Component {
                 Entrepreneur (
                 <a target="_blank" href="https://www.instagram.com/shakin_col/">
                   Shakin'
-                </a>{" | "}
+                </a>
+                {" | "}
                 <a
                   target="_blank"
                   href="https://www.instagram.com/rosanegrataqueria/"
                 >
                   Rosanegra
-                </a>{" | "}
+                </a>
+                {" | "}
                 <a target="_blank" href="https://www.instagram.com/somos.humo/">
                   Humo
                 </a>
@@ -44,13 +49,53 @@ class CenterColumn extends React.Component {
               </p>
             </div>
             <div className="date">
-              <CalendarIcon className="calendar"/>
+              <CalendarIcon className="calendar" />
               <p>Joined May 2010</p>
             </div>
             <div className="stats">
-              <p>150 <span>Following</span></p>
-              <p>1.5B <span>Followers</span></p>
+              <p>
+                150 <span>Following</span>
+              </p>
+              <p>
+                21M <span>Followers</span>
+              </p>
             </div>
+          </div>
+        </div>
+
+        <div className="tweets-container">
+          <div className="header">
+            <div className="cv">
+              <NavLink
+                exact
+                to="/"
+                className="header-link"
+                activeStyle={{
+                  color: "#1a91da",
+                  borderBottom: "2px solid #1a91da"
+                }}
+              >
+                CV
+              </NavLink>
+            </div>
+            <div className="portfolio">
+              <NavLink
+                exact
+                to="/portfolio"
+                className="header-link"
+                activeStyle={{
+                  color: "#1a91da",
+                  borderBottom: "2px solid #1a91da"
+                }}
+              >
+                Portfolio
+              </NavLink>
+            </div>
+          </div>
+
+          <div className="tweets">
+            <Route exact path="/" render={routeProps => <CVTweets />} />
+            <Route exact path="/portfolio" render={routeProps => <PortfolioTweets />} />
           </div>
         </div>
       </>

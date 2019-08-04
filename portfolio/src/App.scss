@@ -18,6 +18,9 @@
 
     .center-column-container {
       grid-area: center-column;
+
+      display: flex;
+      flex-direction: column;
     }
 
     .right-column-container {
