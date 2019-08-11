@@ -46,7 +46,9 @@ class PortfolioTweets extends React.Component {
                     "here"
                   )}.
                 </p>
-                <img src={diarioLogo} />
+                <a href="https://wearediario.com/" target="_blank">
+                  <img src={diarioLogo} />
+                </a>
               </div>
             </div>
           </div>
