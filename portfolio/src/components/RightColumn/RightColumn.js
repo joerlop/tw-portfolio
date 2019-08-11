@@ -40,6 +40,9 @@ class RightColumn extends React.Component {
             </div>
           </a>
         </div>
+        <div className="comments">
+          <p>* The real one</p>
+        </div>
       </>
     );
   }

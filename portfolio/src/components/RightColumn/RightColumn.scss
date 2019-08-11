@@ -58,3 +58,13 @@ $twitterGray: #728390;
     border-bottom-right-radius: 20px;
   }
 } //youmightlike
+
+.comments {
+  display: flex;
+  margin-top: 30px;
+
+  p {
+    font-size: 14px;
+    color: $twitterGray;
+  }
+}
