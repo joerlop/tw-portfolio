@@ -8,9 +8,16 @@ class TweetSocial extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      likes: 100,
+      likes: 0,
       liked: false
     };
+  }
+
+  componentDidMount() {
+    this.setState({
+      ...this.state,
+      likes: this.props.likes
+    })
   }
 
   like = () => {

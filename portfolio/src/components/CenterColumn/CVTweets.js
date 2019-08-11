@@ -30,7 +30,7 @@ class CVTweets extends React.Component {
               </div>
             </div>
           </div>
-          <TweetSocial />
+          <TweetSocial likes={100}/>
         </div>
 
         <div className="tweet">
@@ -52,7 +52,7 @@ class CVTweets extends React.Component {
               </div>
             </div>
           </div>
-          <TweetSocial />
+          <TweetSocial likes={200}/>
         </div>
 
         <div className="tweet">
@@ -82,7 +82,7 @@ class CVTweets extends React.Component {
               </div>
             </div>
           </div>
-          <TweetSocial />
+          <TweetSocial likes={300}/>
         </div>
 
         <div className="tweet">
@@ -127,7 +127,7 @@ class CVTweets extends React.Component {
               </div>
             </div>
           </div>
-          <TweetSocial />
+          <TweetSocial likes={400}/>
         </div>
 
         <div className="tweet">
@@ -158,8 +158,8 @@ class CVTweets extends React.Component {
                     "https://www.instagram.com/somos.humo/",
                     "Humo"
                   )}
-                  ) that now generates more than $2M in revenue and 50+ jobs.
-                  <span className="hashtag"> #humblebrag</span>
+                  ) that now generates more than $2M in revenue and 50+ jobs.{" "}
+                  {this.convertToLink("https://www.urbandictionary.com/define.php?term=Humble%20Brag", "#humblebrag")}
                   <br />
                   <br />
                   Through this amazing process, I:
@@ -187,7 +187,7 @@ class CVTweets extends React.Component {
               </div>
             </div>
           </div>
-          <TweetSocial />
+          <TweetSocial likes={500}/>
         </div>
 
         <div className="tweet">
@@ -216,7 +216,7 @@ class CVTweets extends React.Component {
               </div>
             </div>
           </div>
-          <TweetSocial />
+          <TweetSocial likes={600}/>
         </div>
 
         <div className="tweet">
@@ -226,6 +226,7 @@ class CVTweets extends React.Component {
               <TweetHeader date="Mar, 2019 - present" />
               <div className="tweet-message">
                 <p>
+                  (7/x):{" "}
                   {this.convertToLink(
                     "https://lambdaschool.com/",
                     "Lambda School"
@@ -265,7 +266,7 @@ class CVTweets extends React.Component {
               </div>
             </div>
           </div>
-          <TweetSocial />
+          <TweetSocial likes={700}/>
         </div>
       </>
     );
