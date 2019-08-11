@@ -223,7 +223,14 @@ $twitterRed: #E33C6F;
               color: $twitterBlue;
             }
           }
-        }
+
+          img {
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+          }
+        } //tweet-message
       }
     } //tweet
 
