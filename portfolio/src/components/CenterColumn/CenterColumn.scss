@@ -205,6 +205,24 @@ $twitterRed: #E33C6F;
 
         .tweet-message {
           text-align: start;
+
+          p {
+            line-height: 1.2;
+
+            a {
+              text-decoration: none;
+              color: $twitterBlue;
+            }
+
+            ul {
+              list-style-type: disc;
+              padding-left: 20px;
+            }
+
+            .hashtag {
+              color: $twitterBlue;
+            }
+          }
         }
       }
     } //tweet

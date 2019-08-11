@@ -45,7 +45,7 @@ class CenterColumn extends React.Component {
                 <a target="_blank" href="https://www.instagram.com/somos.humo/">
                   Humo
                 </a>
-                ). Coder. Interested in crypto and fintech.
+                ) · Coder · Interested in crypto and fintech
               </p>
             </div>
             <div className="date">
@@ -54,7 +54,7 @@ class CenterColumn extends React.Component {
             </div>
             <div className="stats">
               <p>
-                150 <span>Following</span>
+                10 <span>Following</span>
               </p>
               <p>
                 21M <span>Followers</span>
