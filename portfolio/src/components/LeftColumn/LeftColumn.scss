@@ -1,6 +1,7 @@
 $twitterBlue: #1a91da;
 $twitterLightBlue: #e8f5fe;
 $firstResponsivePoint: 1300px;
+$SecondResponsivePoint: 1150px;
 
 .navigation-container {
   display: flex;
@@ -40,6 +41,10 @@ $firstResponsivePoint: 1300px;
       width: 30px;
       height: auto;
       margin-right: 20px;
+
+      @media (max-width: $SecondResponsivePoint) {
+        margin-right: 0;
+      }
     }
 
     h2 {
@@ -74,41 +79,4 @@ $firstResponsivePoint: 1300px;
       color: $twitterBlue;
     }
   }
-
-  /*a {
-    text-decoration: none;
-    color: black;
-
-    .nav-item {
-      width: 100%;
-      height: 100%;
-      border-radius: 100px;
-      cursor: pointer;
-      margin-bottom: 15px;
-
-      display: flex;
-      align-items: center;
-      padding: 10px;
-
-      .logo {
-        width: 30px;
-        height: auto;
-        margin-right: 20px;        
-      }
-
-      h2 {
-        font-size: 19px;
-        font-weight: bold;
-      }
-    }
-
-    :hover {
-      background: $twitterLightBlue;
-      color: $twitterBlue; 
-
-      g {
-        fill: $twitterBlue;
-      }
-    }
-  } //a */
 }
