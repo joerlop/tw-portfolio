@@ -1,5 +1,6 @@
 $twitterBlue: #1a91da;
 $twitterLightBlue: #e8f5fe;
+$firstResponsivePoint: 1300px;
 
 .navigation-container {
   display: flex;
@@ -44,6 +45,10 @@ $twitterLightBlue: #e8f5fe;
     h2 {
       font-size: 19px;
       font-weight: bold;
+
+      @media (max-width: $firstResponsivePoint) {
+        display: none;
+      }
     }
   } //nav-item
 

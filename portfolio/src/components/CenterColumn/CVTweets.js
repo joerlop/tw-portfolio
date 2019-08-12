@@ -240,6 +240,7 @@ class CVTweets extends React.Component {
                     "#HTML"
                   )}
                   , {this.convertToLink("https://css-tricks.com/", "#CSS")},{" "}
+                  {this.convertToLink("https://sass-lang.com/", "#Sass")},{" "}
                   {this.convertToLink(
                     "https://github.com/getify/You-Dont-Know-JS",
                     "#JavaScript"

@@ -35,27 +35,6 @@ class LeftColumn extends React.Component {
           <PortfolioLogo className="logo" alt="portfolio icon" />
           <h2>Portfolio</h2>
         </NavLink>
-
-        {/*
-        <a target="_blank" href="https://github.com/joerlop">
-          <div className="nav-item">
-            <GithubLogo className="logo" alt="github icon" />
-            <h2>Github</h2>
-          </div>
-        </a>
-        <a target="_blank" href="https://twitter.com/JonathanErlichL">
-          <div className="nav-item">
-            <TwitterLogo className="logo" alt="twitter icon" />
-            <h2>Real Twitter</h2>
-          </div>
-        </a>
-        <a target="_blank" href="mailto:jj.erlich155@gmail.com">
-          <div className="nav-item">
-            <EmailLogo className="logo" alt="email icon" />
-            <h2>Contact</h2>
-          </div>
-        </a>
-        */}
       </div>
     );
   }
