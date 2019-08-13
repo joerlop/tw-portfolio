@@ -1,7 +1,7 @@
 $firstResponsivePoint: 1300px;
 $SecondResponsivePoint: 1150px;
 $ThirdResponsivePoint: 1000px;
-$FourthResponsivePoint: 675px;
+$FourthResponsivePoint: 725px;
 
 .app-container {
   max-width: 1250px;
@@ -22,23 +22,35 @@ $FourthResponsivePoint: 675px;
     }
 
     @media (max-width: $SecondResponsivePoint) {
-      grid-template-columns: 75px 600px 1fr;
+      grid-template-columns: 105px 600px 1fr;
     }
 
     @media (max-width: $ThirdResponsivePoint) {
-      grid-template-columns: 75px 1fr 0px;
+      grid-template-columns: 1fr 600px 1fr;
+    }
+
+    @media (max-width: $FourthResponsivePoint) {
+      grid-template-columns: 0px 1fr 0px;
     }
 
     .left-column-container {
       grid-area: left-column;
       align-self: flex-start;
-      
+
       @media (max-width: $firstResponsivePoint) {
         justify-self: flex-end;
       }
 
       @media (max-width: $SecondResponsivePoint) {
         justify-self: center;
+      }
+
+      @media (max-width: $ThirdResponsivePoint) {
+        justify-self: flex-end;
+      }
+
+      @media (max-width: $FourthResponsivePoint) {
+        display: none;
       }
     }
 
@@ -48,6 +60,10 @@ $FourthResponsivePoint: 675px;
 
       display: flex;
       flex-direction: column;
+
+      @media (max-width: $FourthResponsivePoint) {
+        margin: 0 5px;
+      }
     }
 
     .right-column-container {

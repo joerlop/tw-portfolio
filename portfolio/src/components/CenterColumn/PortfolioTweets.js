@@ -23,7 +23,7 @@ class PortfolioTweets extends React.Component {
           <div className="tweet-upper">
             <TweetProfilePic />
             <div className="tweet-content">
-              <TweetHeader date="June 2 2019 - July 6, 2019" />
+              <TweetHeader date="June, 2019" />
               <div className="tweet-message">
                 <p>
                   Built my first app (solo) since joining Lambda School in
