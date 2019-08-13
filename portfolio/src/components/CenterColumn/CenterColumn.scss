@@ -2,8 +2,10 @@ $twitterGray: #728390;
 $twitterBlue: #1a91da;
 $twitterDarkGray: #657886;
 $twitterLightBlue: #e8f5fe;
-$twitterLightRed: #F3E3EB;
-$twitterRed: #E33C6F;
+$twitterLightRed: #f3e3eb;
+$twitterRed: #e33c6f;
+
+$FourthResponsivePoint: 725px;
 
 .profile-container {
   display: flex;
@@ -201,7 +203,21 @@ $twitterRed: #E33C6F;
               font-weight: normal;
             }
           }
-        }
+
+          @media (max-width: $FourthResponsivePoint) {
+            .paragraph-desktop {
+              display: none;
+            }
+          }
+
+          .paragraph-mobile {
+            display: none;
+  
+            @media (max-width: $FourthResponsivePoint) {
+              display: block;
+            }
+          }
+        } //tweet-header
 
         .tweet-message {
           text-align: start;
@@ -248,18 +264,18 @@ $twitterRed: #E33C6F;
         .icon-container {
           padding: 10px;
           margin-right: 2px;
-  
+
           .heart-icon {
             height: 20px;
             fill: $twitterGray;
           }
-          
+
           .heart-icon-filled {
             height: 20px;
             fill: $twitterRed;
           }
         }
-  
+
         .liked-false {
           color: $twitterGray;
         }
@@ -267,12 +283,12 @@ $twitterRed: #E33C6F;
         .liked-true {
           color: $twitterRed;
         }
-  
+
         &:hover {
           .icon-container {
             background: $twitterLightRed;
             border-radius: 50px;
-  
+
             .heart-icon {
               fill: $twitterRed;
             }
@@ -281,7 +297,7 @@ $twitterRed: #E33C6F;
               fill: $twitterRed;
             }
           }
-  
+
           p {
             color: $twitterRed;
           }

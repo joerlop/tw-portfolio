@@ -21,7 +21,7 @@ class CVTweets extends React.Component {
           <div className="tweet-upper">
             <TweetProfilePic />
             <div className="tweet-content">
-              <TweetHeader date="1990-" />
+              <TweetHeader date="1990 - present" />
               <div className="tweet-message">
                 <p>
                   (1/x): So… a little bit about the journey that has taken me
@@ -37,7 +37,7 @@ class CVTweets extends React.Component {
           <div className="tweet-upper">
             <TweetProfilePic />
             <div className="tweet-content">
-              <TweetHeader date="1990-" />
+              <TweetHeader date="1990 - present" />
               <div className="tweet-message">
                 <p>
                   (2/x): I was born in Israel, but just at the age of 4 my
@@ -59,7 +59,7 @@ class CVTweets extends React.Component {
           <div className="tweet-upper">
             <TweetProfilePic />
             <div className="tweet-content">
-              <TweetHeader date="2007-2012" />
+              <TweetHeader date="2007 - 2012" />
               <div className="tweet-message">
                 <p>
                   (3/x): After graduating from high school in 2007, I went to{" "}
@@ -89,7 +89,7 @@ class CVTweets extends React.Component {
           <div className="tweet-upper">
             <TweetProfilePic />
             <div className="tweet-content">
-              <TweetHeader date="2013-2015" />
+              <TweetHeader date="2013 - 2015" />
               <div className="tweet-message">
                 <p>
                   (4/x): The first job I landed after university was as a{" "}
@@ -134,7 +134,7 @@ class CVTweets extends React.Component {
           <div className="tweet-upper">
             <TweetProfilePic />
             <div className="tweet-content">
-              <TweetHeader date="2015-2019" />
+              <TweetHeader date="2015 - 2019" />
               <div className="tweet-message">
                 <p>
                   (5/x): As with most startups, we (me and two friends from
@@ -194,7 +194,7 @@ class CVTweets extends React.Component {
           <div className="tweet-upper">
             <TweetProfilePic />
             <div className="tweet-content">
-              <TweetHeader date="2019-" />
+              <TweetHeader date="2019 - present" />
               <div className="tweet-message">
                 <p>
                   (6/x): Everything was going fine until 2017, when I fell (at
@@ -223,7 +223,7 @@ class CVTweets extends React.Component {
           <div className="tweet-upper">
             <TweetProfilePic />
             <div className="tweet-content">
-              <TweetHeader date="2019-" />
+              <TweetHeader date="2019 - present" />
               <div className="tweet-message">
                 <p>
                   (7/x):{" "}
