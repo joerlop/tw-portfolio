@@ -60,10 +60,6 @@ $FourthResponsivePoint: 725px;
 
       display: flex;
       flex-direction: column;
-
-      @media (max-width: $FourthResponsivePoint) {
-        margin: 0 5px;
-      }
     }
 
     .right-column-container {
